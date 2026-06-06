@@ -530,10 +530,10 @@ export default function App() {
   if (!hydrated) {
     return (
       <SafeAreaView style={styles.safe}>
-        <StatusBar style="dark" />
+        <StatusBar style="light" />
         <View style={styles.splash}>
-          <ActivityIndicator color={WINE} />
-          <Text style={styles.loadingText}>Opening Zuri Elegance...</Text>
+          <Text style={styles.splashBrand}>Zuri Elegance</Text>
+          <ActivityIndicator color={GOLD} />
         </View>
       </SafeAreaView>
     );
@@ -1950,7 +1950,8 @@ const styles = StyleSheet.create({
     shadowRadius: 16,
   },
   loadingText: { color: WINE, fontWeight: "900" },
-  splash: { flex: 1, alignItems: "center", justifyContent: "center", gap: 10, backgroundColor: CREAM },
+  splash: { flex: 1, alignItems: "center", justifyContent: "center", gap: 18, backgroundColor: WINE },
+  splashBrand: { color: GOLD, fontFamily: "Georgia", fontSize: 42, fontWeight: "900" },
   header: { paddingHorizontal: 14, paddingTop: 12, paddingBottom: 12, backgroundColor: WINE, zIndex: 20 },
   headerBrandRow: {
     flexDirection: "row",
