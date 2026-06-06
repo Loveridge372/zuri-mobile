@@ -12,6 +12,7 @@
       "backgroundColor": "#50242A"
     },
     "ios": {
+      "bundleIdentifier": "com.zurielegance.mobile",
       "supportsTablet": true
     },
     "android": {
