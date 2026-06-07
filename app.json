@@ -13,7 +13,10 @@
     },
     "ios": {
       "bundleIdentifier": "com.zurielegance.mobile",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.zurielegance.mobile",
@@ -26,6 +29,14 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4c1d4c95-493b-4a95-bfa5-a362135349c3"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
   }
 }
